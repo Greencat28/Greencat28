@@ -1,0 +1,60 @@
+$prime-color:#34547A;
+$bg-color: #EEEFF1;
+
+%title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    padding-bottom: 50px; 
+    @media (max-width: 822px) {
+        font-size: 29px;
+    } 
+    @media (max-width: 670px) {
+        padding-bottom: 40px;
+    } 
+}
+
+%text {
+    font-size: 16px;
+    color: #727272;
+    max-width: 540px;  
+    @media (max-width: 995px) {
+        font-size: 14px; 
+    }
+    @media (max-width: 670px) {
+        text-align: center;
+    } 
+}
+
+@mixin center ($d,$c) {
+    display: $d;
+    justify-content: $c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+body, 
+textarea,
+input {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.3;
+    color: #000;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
